@@ -51,6 +51,7 @@ html, body{
     background:url('http://www.savoo.co.uk/images/savings/redesign/logos/savoo-gb.png') no-repeat center center;
     width:208px;
     height:48px;
+    display: block;
 }
 .menu_border_bottom {
     flex: 1;
