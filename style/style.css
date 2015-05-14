@@ -1,0 +1,241 @@
+html, body{
+    margin:0;
+    height:100%;
+}
+#header{
+    height: 60px;
+    width:100%;
+    background: #1a7fbb;
+}
+.headerContainer{
+    display:flex;
+    height: 100%;
+    flex-direction: row;
+}
+.logo{
+    flex:1;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    min-width: 208px;
+}
+.login_profile{
+    flex:1;
+}
+.menu{
+    flex: 4;
+    display: flex;
+    flex-direction: row;
+}
+.menu_item, .login_profile {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    transition:0.1s;
+    cursor:pointer;
+}
+.menu_item a, .login_profile a {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    flex: 4;
+}
+.header-logo {
+    background:url('http://www.savoo.co.uk/images/savings/redesign/logos/savoo-gb.png') no-repeat center center;
+    width:208px;
+    height:48px;
+}
+.menu_border_bottom {
+    flex: 1;
+    background: #49aae4;
+    width: 100%;
+    transition:0.1s;
+}
+/* Menu Hover effects */
+.menu_item:hover, .login_profile:hover{
+    background: #1071aa;
+}
+.menu_item:hover .menu_border_bottom{
+    background: #42a0d9;
+}
+/* Menu Active effects */
+.menu_item:active, .login_profile:hover:active{
+    background: #0d6ca5;
+}
+.menu_item:active .menu_border_bottom{
+    flex:0.3;
+}
+
+/* Body Content */
+.content_container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.search_container {
+    height: 600px;
+    display: flex;
+    flex-basis: 100%;
+    min-height: 350px;
+    flex-direction: column;
+}
+.search_box {
+    /* margin: auto; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    width: 70%;
+}
+div#gsc-iw-id1 {
+    border-radius: 12px;
+}
+.deal_container {
+    background-color: #1a7fbb;
+    display: flex;
+    padding: 0%;
+    flex-direction: row;
+    flex-basis: 100%;
+}
+.deal_slider {
+    width: 628px;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.voucher_section {
+    background: #E4E4E4;
+}
+.voucher_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 95%;
+}
+.voucher_box {
+    background: white;
+    width: 11em;
+    padding: 1.5%;
+    margin: 1%;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+}
+.deal_amount {
+    font-family: sans-serif;
+    font-size: 35px;
+    color: #BD1414;
+    display: block;
+}
+.deal_text {
+    font-family: sans-serif;
+    margin: auto;
+    display: block;
+    margin-top: 3%;
+    width: 100%;
+}
+.left_arrow{
+    margin-left: auto;
+}
+.right_arrow{
+    margin-right: auto;
+} 
+.nav_arrow {
+    background: black;
+    height: 250px;
+    width: 40px;
+    opacity: 0.2;
+}
+.slider_nav {
+    width: 100%;
+    flex-basis: 30%;
+    background: #313131;
+}
+.image_container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+.image_container span {
+    color: white;
+    font-family: sans-serif;
+    margin: auto;
+    font-size: 13px;
+}
+.deal_slider img {
+    width: 100%;
+}
+.image_1 {
+    background: #929292;
+    width: 33%;
+    height: 20px;
+    display: flex;
+    margin-right: 1px;
+}
+.merchant_logo {
+    width: 150px;
+    height: 40px;
+    border: solid 1px #ADADAD;
+    border-radius: 7px;
+    display: flex;
+    margin: auto;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+}
+.merchant_logo img {
+    width: 130px;
+    margin: auto;
+}
+.get_deal {
+    background: #1A7FBB;
+    margin-top: 10px;
+    padding: 1%;
+    width: 100%;
+    height: 31px;
+    display: flex;
+    cursor:pointer;
+}
+.get_deal span {
+    color: white;
+    margin: auto;
+    vertical-align: middle;
+    text-align: center;
+    font-family: sans-serif;
+}
+.top_fold {
+    width: 0;   height: 0;   
+    border-top: 20px solid transparent;
+    
+    border-bottom: 0px solid transparent;   
+    
+    border-left: 20px solid #045180;    
+    top: -2px;
+    left: 2px;
+    position: relative;
+    background: white;
+}
+.get_deal:hover {
+    background: #096094;
+}
+h3 {
+    font-size: 50px;
+    color: #1A7FBB;
+    font-family: sans-serif;
+    margin: auto;
+    text-align: center;
+}
+.search_title {
+    margin-top: auto;
+}
